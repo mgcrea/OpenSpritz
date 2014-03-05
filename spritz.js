@@ -4,7 +4,7 @@
 // https://github.com/Miserlou/OpenSpritz
 
 // Please don't abuse this.
-var readability_token = '172b057cd7cfccf27b60a36f16b1acde12783893';
+var readability_token = 'a1133baa7669c787643de5506a4cbc8d17f7ca8b';
 
 // Create the view from the remote resource.
 function create_spritz(){
@@ -23,7 +23,7 @@ function create_spritz(){
 }
 
 // jQuery loader: http://coding.smashingmagazine.com/2010/05/23/make-your-own-bookmarklets-with-jquery/
-// This is pretty fucked and should be replaced. Is there anyway we can just force 
+// This is pretty fucked and should be replaced. Is there anyway we can just force
 // the latest jQ? I wouldn't have a problem with that.
 function load_jq(spritz_loader){
 
@@ -119,14 +119,14 @@ function spritzify(input){
 
     // Set the timers!
     for (var i=0; i<all_words.length; i++){
-        setTimeout(function(x) { 
-            return function() { 
+        setTimeout(function(x) {
+            return function() {
 
                 var p = pivot(all_words[x]);
                 $('#spritz_result').html(p);
 
         }; }(i), ms_per_word * i);
-        
+
     }
 }
 
